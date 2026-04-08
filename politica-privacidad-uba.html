@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad | UBA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .material-symbols-outlined.filled {
+      font-variation-settings: 'FILL' 1;
+    }
+  </style>
+<script crossorigin="" src="/sistema-uba/Frontend/dist/assets/index-SNvOGqJE.js" type="module"></script>
+<link crossorigin="" href="/sistema-uba/Frontend/dist/assets/index-vwB3V8uP.css" rel="stylesheet"/>
+</link>
+<link crossorigin="" href="/sistema-uba/Frontend/dist/assets/index-vwB3V8uP.css" rel="stylesheet"/>
+  <style>
+  
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .material-symbols-outlined.filled {
+      font-variation-settings: 'FILL' 1;
+    }
+  
+  :root {
+    --uba-bg: #f6f8fb;
+    --uba-surface: rgba(255,255,255,0.92);
+    --uba-text: #16324f;
+    --uba-muted: #5f7388;
+    --uba-accent: #2f80c3;
+    --uba-accent-2: #29a36a;
+    --uba-border: rgba(22,50,79,.12);
+    --uba-shadow: 0 20px 50px rgba(23,55,94,.12);
+    --uba-radius: 24px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--uba-text);
+    background:
+      radial-gradient(circle at top right, rgba(47,128,195,.10), transparent 28%),
+      radial-gradient(circle at left bottom, rgba(41,163,106,.10), transparent 24%),
+      var(--uba-bg);
+  }
+  a { color: var(--uba-accent); }
+  .privacy-shell { min-height: 100vh; padding: 32px 16px 64px; }
+  .privacy-wrap { max-width: 1120px; margin: 0 auto; }
+  .hero {
+    background: linear-gradient(135deg, rgba(47,128,195,.96), rgba(23,55,94,.96));
+    color: #fff;
+    border-radius: 28px;
+    padding: 32px 24px;
+    box-shadow: var(--uba-shadow);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: auto -60px -60px auto;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(255,255,255,.22), transparent 70%);
+  }
+  .hero small { letter-spacing: .08em; text-transform: uppercase; opacity: .88; }
+  .hero h1 { margin: 10px 0 12px; font-size: clamp(2rem, 3vw, 3.3rem); line-height: 1.08; }
+  .hero p { max-width: 780px; margin: 0; font-size: 1.04rem; color: rgba(255,255,255,.92); }
+  .layout { display: grid; grid-template-columns: 290px minmax(0,1fr); gap: 24px; margin-top: 24px; }
+  .card {
+    background: var(--uba-surface);
+    border: 1px solid var(--uba-border);
+    border-radius: var(--uba-radius);
+    box-shadow: var(--uba-shadow);
+    backdrop-filter: blur(10px);
+  }
+  .side { position: sticky; top: 16px; align-self: start; padding: 22px; }
+  .side h2 { margin: 0 0 14px; font-size: 1.05rem; }
+  .side nav a {
+    display: block; text-decoration: none; color: var(--uba-text);
+    padding: 11px 14px; border-radius: 14px; margin-bottom: 8px;
+    background: rgba(47,128,195,.05); border: 1px solid transparent;
+  }
+  .side nav a:hover { background: rgba(47,128,195,.1); border-color: rgba(47,128,195,.14); }
+  .content { padding: 28px; }
+  .content section + section { margin-top: 24px; }
+  .content h2 { font-size: 1.42rem; margin: 0 0 12px; }
+  .content h3 { font-size: 1.06rem; margin: 20px 0 8px; }
+  .content p, .content li { color: var(--uba-muted); line-height: 1.72; }
+  .content ul { padding-left: 20px; margin: 10px 0 0; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; margin-top: 16px; }
+  .mini { padding: 18px; border-radius: 20px; background: rgba(47,128,195,.05); border: 1px solid rgba(47,128,195,.12); }
+  .mini strong { display: block; margin-bottom: 6px; color: var(--uba-text); }
+  .pillbar { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+  .pill { background: rgba(41,163,106,.12); color: #176747; border: 1px solid rgba(41,163,106,.22); padding: 8px 12px; border-radius: 999px; font-size: .92rem; }
+  .notice { padding: 18px 20px; border-radius: 20px; background: rgba(255,193,7,.12); border:1px solid rgba(181,132,0,.18); margin-top: 16px; }
+  .footer { margin-top: 24px; padding: 20px 24px; font-size: .95rem; color: var(--uba-muted); }
+  @media (max-width: 920px) { .layout { grid-template-columns: 1fr; } .side { position: static; } .grid { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) { .hero, .content, .side { padding: 20px; } .privacy-shell { padding-top: 18px; } }
+  </style>
+</head>
+<body class="">
+  <main class="privacy-shell">
+    <div class="privacy-wrap">
+      <section class="hero" aria-labelledby="titulo-politica">
+        <small>Unidad de Bienestar Animal</small>
+        <h1 id="titulo-politica">Política de Privacidad de la plataforma de denuncias</h1>
+        <p>Esta política aplica a la aplicación móvil y a la versión web del sistema de denuncias para animales en peligro o en situación de maltrato, administrado por la Unidad de Bienestar Animal del Ministerio de Agricultura, Ganadería y Alimentación de Guatemala.</p>
+      </section>
+
+      <div class="layout">
+        <aside class="side card" aria-label="Navegación de política">
+          <h2>Contenido</h2>
+          <nav>
+            <a href="#responsable">1. Responsable</a>
+            <a href="#datos">2. Datos recopilados</a>
+            <a href="#finalidades">3. Finalidades</a>
+            <a href="#base">4. Tratamiento y consentimiento</a>
+            <a href="#comparticion">5. Compartición</a>
+            <a href="#seguridad">6. Seguridad</a>
+            <a href="#retencion">7. Conservación</a>
+            <a href="#derechos">8. Derechos del usuario</a>
+            <a href="#menores">9. Menores de edad</a>
+            <a href="#terceros">10. Servicios de terceros</a>
+            <a href="#cambios">11. Cambios</a>
+            <a href="#contacto">12. Contacto</a>
+          </nav>
+        </aside>
+
+        <article class="content card">
+          <section id="responsable">
+            <h2>1. Responsable del tratamiento</h2>
+            <p>La plataforma es administrada por la Unidad de Bienestar Animal (UBA) del Ministerio de Agricultura, Ganadería y Alimentación (MAGA), con el fin de recibir, validar, tramitar y dar seguimiento a denuncias relacionadas con animales en peligro, maltrato animal u otros hechos que deban ser revisados por la autoridad competente.</p>
+            <p>La política cubre el uso de la plataforma desde aplicación móvil y desde versión web, incluyendo formularios, carga de documentos, evidencias y canales de contacto vinculados al proceso de denuncia.</p>
+          </section>
+
+          <section id="datos">
+            <h2>2. Datos personales y datos sensibles que pueden recopilarse</h2>
+            <p>Para registrar una denuncia de forma correcta, la plataforma puede solicitar y tratar los siguientes datos, según el tipo de reporte:</p>
+            <div class="grid">
+              <div class="mini"><strong>Identificación del denunciante</strong><span>Nombre completo, número de DPI u otro documento de identificación, fecha de nacimiento cuando proceda, firma y relación con los hechos denunciados.</span></div>
+              <div class="mini"><strong>Datos de contacto</strong><span>Número de teléfono, correo electrónico, dirección de domicilio o dirección para recibir notificaciones.</span></div>
+              <div class="mini"><strong>Datos de la denuncia</strong><span>Descripción de los hechos, fecha, hora, ubicación, datos del animal afectado, datos del presunto responsable y cualquier observación adicional.</span></div>
+              <div class="mini"><strong>Evidencia adjunta</strong><span>Fotografías, videos, documentos, audios, referencias geográficas, archivos cargados por la persona usuaria y otra evidencia necesaria para verificar la denuncia.</span></div>
+            </div>
+            <div class="notice">
+              La persona usuaria debe proporcionar información veraz, actualizada y suficiente para sustentar la denuncia. La presentación de datos falsos, incompletos o engañosos puede impedir la atención del caso o generar responsabilidades conforme a la normativa aplicable.
+            </div>
+          </section>
+
+          <section id="finalidades">
+            <h2>3. Finalidades del tratamiento</h2>
+            <ul>
+              <li>Recibir, registrar, clasificar y dar trámite administrativo a la denuncia.</li>
+              <li>Verificar la identidad de la persona denunciante cuando sea necesario para prevenir fraudes, duplicidades o denuncias maliciosas.</li>
+              <li>Contactar a la persona usuaria para solicitar ampliación de información, comunicar requerimientos, informar avances o notificar resultados del expediente.</li>
+              <li>Analizar documentos y evidencias para determinar la procedencia de actuaciones técnicas, inspecciones o remisión a otras autoridades.</li>
+              <li>Generar estadísticas, reportes institucionales y mejoras del servicio, procurando usar información agregada o minimizada cuando sea posible.</li>
+              <li>Cumplir obligaciones legales, regulatorias, administrativas, judiciales o de cooperación interinstitucional.</li>
+            </ul>
+            <div class="pillbar">
+              <span class="pill">Recepción de denuncias</span>
+              <span class="pill">Validación de identidad</span>
+              <span class="pill">Seguimiento del expediente</span>
+              <span class="pill">Cumplimiento legal</span>
+            </div>
+          </section>
+
+          <section id="base">
+            <h2>4. Base de tratamiento, transparencia y consentimiento</h2>
+            <p>El tratamiento de los datos personales se realiza porque la persona usuaria decide presentar voluntariamente una denuncia y suministra la información necesaria para su gestión, así como por el interés público y las atribuciones institucionales relacionadas con la protección y bienestar animal.</p>
+            <p>Cuando la app o el sitio soliciten permisos del dispositivo, como acceso a cámara, galería, archivos, ubicación o teléfono, dichos permisos deberán usarse únicamente para funciones relacionadas con la denuncia, por ejemplo adjuntar evidencia, registrar ubicación de los hechos o facilitar comunicación con la persona denunciante.</p>
+            <p>Antes de recopilar datos personales o sensibles que no resulten evidentes para la funcionalidad principal, se recomienda mostrar un aviso claro dentro de la app o del sitio explicando qué datos se solicitan, para qué se usarán y si serán compartidos con terceros autorizados.</p>
+          </section>
+
+          <section id="comparticion">
+            <h2>5. Compartición y divulgación de información</h2>
+            <p>Los datos personales no deben venderse ni utilizarse con fines comerciales no relacionados con la gestión de denuncias. La información podrá ser compartida únicamente en los siguientes supuestos:</p>
+            <ul>
+              <li>Con dependencias internas del MAGA o de la UBA que deban intervenir en la atención del caso.</li>
+              <li>Con autoridades administrativas, policiales, municipales o judiciales competentes cuando la denuncia requiera investigación, inspección, protección o ejecución de medidas legales.</li>
+              <li>Con proveedores tecnológicos que apoyen el alojamiento, mantenimiento o seguridad de la plataforma, bajo obligaciones de confidencialidad y tratamiento restringido.</li>
+              <li>Cuando exista requerimiento legal, orden competente o necesidad de proteger derechos, seguridad, integridad de animales o interés público.</li>
+            </ul>
+          </section>
+
+          <section id="seguridad">
+            <h2>6. Medidas de seguridad</h2>
+            <p>Se deben aplicar medidas técnicas, administrativas y organizativas razonables para proteger la información contra acceso no autorizado, alteración, pérdida, destrucción o divulgación indebida. Estas medidas pueden incluir control de accesos, perfiles autorizados, cifrado en tránsito, resguardo de respaldos, monitoreo y revisión periódica de permisos.</p>
+            <p>Aunque se implementen controles de seguridad, ningún sistema es completamente infalible, por lo que la entidad responsable actuará diligentemente para prevenir incidentes y responder a ellos cuando corresponda.</p>
+          </section>
+
+          <section id="retencion">
+            <h2>7. Conservación de la información</h2>
+            <p>Los datos personales y los archivos adjuntos se conservarán durante el tiempo necesario para atender la denuncia, mantener el expediente, cumplir obligaciones legales o atender auditorías, requerimientos institucionales y procesos de revisión.</p>
+            <p>Una vez vencidos los plazos aplicables, la información podrá ser eliminada, anonimizada, archivada o bloqueada conforme a la normativa y a las políticas internas de gestión documental y seguridad de la información.</p>
+          </section>
+
+          <section id="derechos">
+            <h2>8. Derechos de las personas usuarias</h2>
+            <p>La persona usuaria podrá solicitar información sobre el tratamiento de sus datos, pedir corrección de información inexacta, actualizar datos de contacto, retirar consentimiento en los casos en que sea aplicable y solicitar la eliminación o restricción del tratamiento cuando legalmente proceda y ello no afecte una obligación institucional de conservación del expediente.</p>
+            <p>La autoridad podrá requerir medios razonables para verificar la identidad de quien presenta la solicitud antes de entregar, corregir o suprimir información personal.</p>
+          </section>
+
+          <section id="menores">
+            <h2>9. Uso por menores de edad</h2>
+            <p>La plataforma no está dirigida principalmente a menores de edad. Si una denuncia fuera presentada por una persona menor de edad, se recomienda que cuente con acompañamiento de su padre, madre, tutor o representante legal cuando la normativa o el caso lo requieran.</p>
+          </section>
+
+          <section id="terceros">
+            <h2>10. Servicios de terceros y cumplimiento en tiendas</h2>
+            <p>Si la aplicación integra servicios de terceros, como analítica, notificaciones push, alojamiento, mapas, carga de archivos o autenticación, dichos servicios deberán quedar identificados en esta política o en un aviso complementario, indicando qué datos reciben y para qué se usan.</p>
+            <p>Para publicar en Google Play y App Store, la entidad responsable debe asegurar que esta política coincida con las prácticas reales de la app, con los permisos solicitados, con los formularios de divulgación de privacidad de cada tienda y con cualquier etiqueta o sección de seguridad de datos declarada al momento de publicar.</p>
+            <p>Si existe creación de cuenta dentro de la app, también debe habilitarse el mecanismo aplicable para eliminación de cuenta y de datos asociados, salvo la información que deba conservarse por obligación legal o por gestión del expediente administrativo.</p>
+          </section>
+
+          <section id="cambios">
+            <h2>11. Cambios a la política</h2>
+            <p>La presente política puede actualizarse para reflejar cambios legales, técnicos, operativos o funcionales de la plataforma. Cuando el cambio sea relevante, se podrá publicar un aviso dentro del sistema, en la versión web, en la app o por otros medios razonables de comunicación institucional.</p>
+          </section>
+
+          <section id="contacto">
+            <h2>12. Contacto</h2>
+            <p>Para consultas sobre privacidad, uso de datos personales, actualización de información o ejercicio de derechos, debe habilitarse un canal oficial de contacto de la Unidad de Bienestar Animal o del MAGA, visible tanto en la app como en la versión web.</p>
+            <h3>Fecha de vigencia sugerida</h3>
+            <p>Esta política puede entrar en vigor en la fecha de publicación oficial que defina la institución.</p>
+            <h3>Recomendaciones para publicación</h3>
+            <ul>
+              <li>Publicar esta política en una URL pública, estable y accesible sin iniciar sesión.</li>
+              <li>Incluir enlace visible en el login, registro, formulario de denuncia y ficha de la app en Google Play y App Store.</li>
+              <li>Alinear el texto final con el flujo real del sistema, permisos del dispositivo y proveedores efectivamente integrados antes de su publicación oficial.</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+
+      <footer class="footer card">
+        Documento base de política de privacidad para la plataforma de denuncias UBA. Debe ser revisado y aprobado por el área jurídica, tecnológica y la unidad responsable antes de publicarse como versión definitiva.
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
